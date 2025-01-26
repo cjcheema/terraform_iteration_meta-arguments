@@ -1,7 +1,7 @@
 resource "aws_security_group" "count_sg" {
   count       = var.number_of_sgs
   name        = "${var.sg_base_name}-${count.index + 1}"
-  description = "Security Group created using count index ${count.index}"
+  description = "Security Group created using count index ${count.index + 1}"
 
   ingress {
     from_port   = 80
