@@ -1,9 +1,9 @@
 # Invoke security group count module
-/*module "sg_count" {
+module "sg_count" {
   source        = "./modules/sg_count"
   number_of_sgs = var.number_of_sgs
   sg_base_name  = var.sg_base_name
-}*/
+}
 
 # Invoke security group for_each module
 module "security_groups_for_each" {
