@@ -34,8 +34,6 @@ variable "sg_configs" {
 }
 
 variable "create_sg" {
-
   default = true
-
 }
 
