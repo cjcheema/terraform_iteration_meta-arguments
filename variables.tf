@@ -34,7 +34,7 @@ variable "sg_configs" {
 }
 
 variable "create_sg" {
- type =   bool
- default = true
+  type    = bool
+  default = true
 }
 
