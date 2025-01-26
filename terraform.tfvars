@@ -7,3 +7,8 @@ sg_configs = {
   sg1 = { name = "web-sg-1", port = 80 }
   sg2 = { name = "web-sg-2", port = 443 }
 }
+
+variable "create_sg" {
+ type =   bool
+ default = true
+}

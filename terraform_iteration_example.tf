@@ -13,5 +13,5 @@
 
 module "sg_count_condition" {
   source       = "./modules/sg_count_condition"
-  sg_base_name = "${var.sg_base_name}"
+  sg_base_name = var.sg_base_name
 }

@@ -2,7 +2,7 @@ resource "aws_security_group" "conditional_sg" {
 
 count = var.create_sg ? 1 : 0
 
-name = var.sg_base_name
+name = web-sg-1
 description = "This Web Server conditional Security Group is created only if create_sg is true"
 
 

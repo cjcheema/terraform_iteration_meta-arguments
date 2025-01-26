@@ -1,5 +1,4 @@
 variable "create_sg" {
-
-default = true
-
+ type =   bool
+ default = true
 }
