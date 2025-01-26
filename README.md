@@ -4,7 +4,7 @@ This repository demonstrates the use of Terraform's count and for_each meta-argu
 
 ## Code Structure
 
-<code>
+```bash
 tree terraform/
 .
 ├── main.tf
@@ -18,7 +18,7 @@ tree terraform/
 │   │   ├── main.tf
 │   │   ├── variables.tf
 │   │   ├── outputs.tf
-</code>
+```
 
 ## Root Module
 
@@ -44,29 +44,41 @@ Useful for creating resources with unique configurations, such as different port
 
 1. Clone this repository:
 
-<code>git clone https://github.com/your-repo/terraform-count-vs-foreach.git</code>
+```bash 
+git clone https://github.com/your-repo/terraform-count-vs-foreach.git
+```
 
 2. Navigate to the terraform/ directory:
 
-<code>cd terraform</code>
+```bash
+cd terraform
+```
 
 3. Modify the terraform.tfvars file to suit your requirements.
 
 4. Initialize Terraform:
 
-<code>terraform init</code>
+```bash
+terraform init
+```
 
 5. Preview the planned infrastructure changes:
 
-<code>terraform plan</code>
+```bash
+terraform plan
+```
 
 6. Apply the changes:
 
-<code>terraform apply</code>
+```bash
+terraform apply
+```
 
 7. To destroy the infrastructure:
 
-<code>terraform destroy</code>
+```bash
+terraform destroy
+```
 
 # Author
 
