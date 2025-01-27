@@ -10,14 +10,14 @@ tree terraform/
 ├── main.tf
 ├── terraform.tfvars
 ├── modules/
-│   ├── security_group_count/
+│   ├── sg_count/
 │   │   ├── main.tf
 │   │   ├── variables.tf
 │   │   ├── outputs.tf
-│   ├── security_group_count_condition/
+│   ├── sg_count_condition/
 │   │   ├── main.tf
 │   │   ├── variables.tf
-│   ├── security_group_for_each/
+│   ├── sg_for_each/
 │   │   ├── main.tf
 │   │   ├── variables.tf
 │   │   ├── outputs.tf
@@ -31,19 +31,19 @@ tree terraform/
 
 ## Child Modules
 
-1. security_group_count:
+1. sg_count:
 
 * Demonstrates creating AWS Security Groups using the count meta-argument.
 
 * Suitable for provisioning identical resources or conditionally creating resources based on numeric input.
 
-2. security_group_count_condition:
+2. sg_count_condition:
 
 * Demonstrates conditional creation of AWS Security Groups using the count meta-argument.
 
 * Useful for dynamically enabling or disabling Security Group provisioning based on specific conditions.
 
-3. security_group_for_each:
+3. sg_for_each:
 
 * Demonstrates creating AWS Security Groups using the for_each meta-argument.
 
