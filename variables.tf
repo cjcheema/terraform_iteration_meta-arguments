@@ -37,3 +37,8 @@ variable "create_sg" {
   type    = bool
   default = true
 }
+
+variable "condition_sg_name" {
+  description = "Name for Conditional security group."
+  type        = string
+}

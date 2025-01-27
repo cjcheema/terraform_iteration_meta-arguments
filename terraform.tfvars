@@ -9,4 +9,4 @@ sg_configs = {
 }
 
 # Variables for the count condition-based module
-cond_sg_name = "conditional-web-sg"
+ondition_sg_name = "conditional-web-sg"
