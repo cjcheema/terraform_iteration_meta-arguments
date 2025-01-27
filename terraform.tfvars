@@ -7,3 +7,6 @@ sg_configs = {
   sg1 = { name = "web-sg-1", port = 80 }
   sg2 = { name = "web-sg-2", port = 443 }
 }
+
+# Variables for the count condition-based module
+cond_sg_name = "conditional-web-sg"

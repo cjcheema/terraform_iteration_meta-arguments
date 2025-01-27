@@ -15,4 +15,5 @@ module "security_groups_for_each" {
 module "sg_count_condition" {
   source    = "./modules/sg_count_condition"
   create_sg = var.create_sg
+  cond_sg_name = var.cond_sg_name
 }
