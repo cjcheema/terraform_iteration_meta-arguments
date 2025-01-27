@@ -1,6 +1,6 @@
 variable "create_sg" {
  type =   bool
- default = false
+ default = true
 }
 
 variable "cond_sg_name" {
