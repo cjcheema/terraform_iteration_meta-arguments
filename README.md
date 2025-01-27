@@ -14,6 +14,9 @@ tree terraform/
 │   │   ├── main.tf
 │   │   ├── variables.tf
 │   │   ├── outputs.tf
+│   ├── security_group_count_condition/
+│   │   ├── main.tf
+│   │   ├── variables.tf
 │   ├── security_group_for_each/
 │   │   ├── main.tf
 │   │   ├── variables.tf
@@ -28,17 +31,23 @@ tree terraform/
 
 ## Child Modules
 
-* security_group_count:
+1. security_group_count:
 
-Demonstrates creating AWS Security Groups using the count meta-argument.
+* Demonstrates creating AWS Security Groups using the count meta-argument.
 
-Suitable for provisioning identical resources or conditionally creating resources based on numeric input.
+* Suitable for provisioning identical resources or conditionally creating resources based on numeric input.
 
-* security_group_for_each:
+2. security_group_count_condition:
 
-Demonstrates creating AWS Security Groups using the for_each meta-argument.
+* Demonstrates conditional creation of AWS Security Groups using the count meta-argument.
 
-Useful for creating resources with unique configurations, such as different ports or rules for each Security Group.
+* Useful for dynamically enabling or disabling Security Group provisioning based on specific conditions.
+
+3. security_group_for_each:
+
+* Demonstrates creating AWS Security Groups using the for_each meta-argument.
+
+* Useful for creating resources with unique configurations, such as different ports or rules for each Security Group.
 
 ## How to Use
 
