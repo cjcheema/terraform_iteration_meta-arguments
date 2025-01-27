@@ -12,6 +12,6 @@
 }*/
 
 module "sg_count_condition" {
-  source       = "./modules/sg_count_condition"
-  sg_base_name = var.sg_base_name
+  source    = "./modules/sg_count_condition"
+  create_sg = var.create_sg
 }
